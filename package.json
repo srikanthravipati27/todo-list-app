@@ -1,0 +1,14 @@
+{
+  "name": "todo-list-app",
+  "version": "1.0.0",
+  "description": "Todo List Application",
+  "main": "todo.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^27.0.0",
+    "husky": "^7.0.0",
+    "prettier": "^2.0.0"
+  }
+}
