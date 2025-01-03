@@ -1,0 +1,16 @@
+<ul>
+  <% if (todos.length > 0) { %>
+    <% todos.forEach(todo => { %>
+      <li>
+        <span><%= todo.title %></span>
+        <% if (todo.completed) { %>
+          <span class="completed">Completed</span>
+        <% } else { %>
+          <span class="pending">Pending</span>
+        <% } %>
+      </li>
+    <% }); %>
+  <% } else { %>
+    <li>No Todos in this category.</li>
+  <% } %>
+</ul>
