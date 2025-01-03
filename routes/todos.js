@@ -13,4 +13,16 @@ router.get('/todos', async (req, res) => {
   }
 });
 
+// DELETE /todos/:id - Delete a Todo by ID
+router.delete('/todos/:id', async (req, res) => {
+  try {
+    const todoId = req.params.id;
+    const result = await Todo.destroy({ where: { id: todoId } }); // Sequelize method to delete
+    res.status(200).json({ success: result > 0 }); // true if deleted, false otherwise
+  } catch (error) {
+    console.error('Error deleting todo:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
 module.exports = router;
