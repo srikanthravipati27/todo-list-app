@@ -1,10 +1,10 @@
 
-
 const { Sequelize } = require('sequelize');
 
 const sequelize = new Sequelize({
   dialect: 'sqlite',
   storage: 'todos.db',
 });
+//module
 
-module.exports = { sequelize };
+module.exports = { sequelize};
