@@ -5,6 +5,6 @@ const sequelize = new Sequelize({
   dialect: 'sqlite',
   storage: 'todos.db',
 });
-//module test
+//module test here
 
 module.exports = { sequelize};
