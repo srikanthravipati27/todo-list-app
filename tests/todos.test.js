@@ -6,7 +6,7 @@ describe('DELETE /todos/:id', () => {
   let todo;
 
   beforeAll(async () => {
-    // Create a sample Todo for testing
+    // Create a samhdjee jeje
     todo = await Todo.create({ title: 'Sample Todo', completed: false });
   });
 
